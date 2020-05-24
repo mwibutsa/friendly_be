@@ -1,0 +1,13 @@
+language: python
+python:
+  - "3.8"
+
+services:
+  - docker
+env:
+  - COVERALLS_REPO_TOKEN:'l1AJtdrPZOC46ib3cKuecubX9NIRlYEyB'
+before_script:
+  - pip install docker-compose
+
+script:
+  - docker-compose run web sh -c "flake8 && python manage.py migrate && python manage.py test"
