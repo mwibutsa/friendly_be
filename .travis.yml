@@ -11,5 +11,3 @@ before_script:
 
 script:
   - docker-compose run web sh -c "flake8 && python manage.py migrate && python manage.py test"
-after_script:
-  - coveralls

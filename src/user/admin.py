@@ -1,3 +1,6 @@
-# from django.contrib import admin
+from django.contrib import admin
+from .models import User, ProfileImage, FriendShip
 
-# # Register your models here.
+admin.site.register(User)
+admin.site.register(ProfileImage)
+admin.site.register(FriendShip)
