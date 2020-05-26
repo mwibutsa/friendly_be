@@ -16,6 +16,7 @@ services:
       - DB_NAME=postgres
       - DB_USER=postgres
       - DB_PASSWORD=postgres
+      - GIT_DISCOVERY_ACROSS_FILESYSTEM=1
     volumes:
       - ./src:/src
     ports:
