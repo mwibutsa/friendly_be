@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'graphene_django',
-    'django_coverage',
+    'user',
 ]
 
 MIDDLEWARE = [
@@ -123,7 +123,7 @@ STATIC_URL = '/static/'
 TEST_RUNNER = 'snapshottest.django.TestRunner'
 
 GRAPHENE = {
-    'SCHEMA': 'riendly_app.base_graphql_schema.schema',
+    'SCHEMA': 'friendly_app.base_graphql_schema.schema',
     'MIDDLEWARE': [
         'graphql_jwt.middleware.JSONWebTokenMiddleware',
     ]
@@ -138,3 +138,4 @@ GRAPHQL_JWT = {
     'JWT_VERIFY_EXPIRATION': True,
     'JWT_EXPIRATION_DELTA': timedelta(days=1)
 }
+AUTH_USER_MODEL = 'user.User'
