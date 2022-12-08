@@ -8,7 +8,7 @@ autobahn==20.4.3
 Automat==20.2.0
 autopep8==1.5.2
 CacheControl==0.12.6
-certifi==2019.11.28
+certifi==2022.12.7
 cffi==1.14.0
 channels==2.4.0
 channels-redis==2.4.2
